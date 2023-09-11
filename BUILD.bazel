@@ -1,0 +1,11 @@
+load(":rule.bzl", "aspect_consumer")
+
+cc_library(
+  name = "x",
+  srcs = []
+)
+
+aspect_consumer(
+  name = "y",
+  cc = ":x",
+)
